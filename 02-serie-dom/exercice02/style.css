@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+div{
+    height: 10vh;
+    background-color: rgb(231, 231, 231);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+#inputCertif{
+    margin: 10px;
+    width: 35vw;
+    height: 20px;
+    font-size: 16px;
+}

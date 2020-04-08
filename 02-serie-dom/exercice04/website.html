@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+        integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="nav-bar">
+        <div id="logo">
+            <img src="taureau_nav.png" alt="">
+            <img src="vache_nav.png" alt="">
+        </div>
+        <h1 id="title">
+            <span id="bull">Bull</span>
+            <span>&</span>
+            <span id="cow">cow</span>
+        </h1>
+        <div>
+            <span id="contact">contact</span>
+        </div>
+    </header>
+    <div id="main-container">
+        <div id="play-container">
+            <div id="play">
+                <input id="number" type="number">
+                <button id="btn"><i class="fas fa-sign-in-alt"></i></button>
+            </div>
+            <p id="redo"></p>
+            <div id="rules">
+                <h2>Règles du jeu</h2>
+                <p id="paragraph">La règle du jeu est simple, vous avez <span id="show-number"></span> essais pour
+                    découvrir
+                    les 4 chiffres auquels l'ordinateur à penser. Si vous avez un chiffre correct et à la bonne place,
+                    l'ordinateur vous indique que vous avez un taureau, si vous avez un chiffre correct mais à la
+                    mauvaise place l'ordinateur
+                    vous indique que vous avez un taureau. A vous de jouer, Bonne chance !</p>
+            </div>
+        </div>
+
+        <div class="result-container"></div>
+        <div id="try-container">
+            <p id="numberTryText">Nombre d'essais restants</p>
+            <p id="numberTry"></p>
+        </div>
+    </div>
+    <div id="choice-difficulty">
+        <div>
+            <img src="taureau_play.png" alt="">
+            <img src="vache_play.png" alt="">
+        </div>
+        <div id="difficulty-container">
+            <label><span id="hard">Hard</span> | <span id="easy">Easy</span></label>
+            <input id="difficulty" type="range" min="3" max="8">
+            <input id="difficulty-button" class="start-btn"type="button" value="Start">
+
+        </div>
+    </div>
+    <div id=final-result-container>
+        <p id="final-result"></p>
+        <p>Le chiffre à trouvé était<span id="show-random"></span></p>
+        <button id="replay" class="start-btn">Rejouer</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
