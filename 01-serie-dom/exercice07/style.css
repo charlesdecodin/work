@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form{
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+label{
+    font-size: 30px;
+    color: white;
+}
+
+#myInput{
+    height: 40px;
+    font-size: 30px;
+}
+#btn{
+    font-size: 27px;
+    border: none;
+    padding: 10px;
+}
+p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eeeeee;
+    height: 300px;
+    font-size: 70px;
+    color: #3B3B3B;
+}

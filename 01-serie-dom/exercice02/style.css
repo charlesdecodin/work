@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+   justify-content: center;
+}
+#navigation{    
+    width: 300px;
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+}
+button{
+    height: 50px;
+    width: 70px;
+    border-radius: 5px;
+    border:none;
+    background-color: #202020;
+    margin: 5px; 
+}
+
+.fas{
+    font-size: 30px;
+    color: white;
+}
+#square{
+    position: absolute;
+    background-color: #87B4C2 ;
+    left: 0;
+    top:677px;
+    height: 50px;
+    width: 50px;
+}

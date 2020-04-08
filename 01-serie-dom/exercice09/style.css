@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#btn{
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: none;
+    margin: 20px;
+    padding: 20px;
+    font-size: 30px;
+}
+p{
+    visibility: hidden;
+    background-color: #E4D873;
+    font-size: 100px;
+    padding: 40px;
+}
+
+
