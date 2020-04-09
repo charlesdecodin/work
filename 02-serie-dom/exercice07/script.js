@@ -1,14 +1,15 @@
 let input = document.querySelectorAll('input')
 let btn = document.getElementById('btn')
-
-
+let array = []
 function getForm() {
 
     for (let i = 0; i < input.length - 1; i++) {
-        localStorage.setItem('i', 'input[i].value')
-        console.log(input[i].value)
+        array.push(input[i].value)
     }
+
+    sessionStorage.setItem('i', JSON.stringify(array))
     window.open("reponse.html")
+
 }
 
 
