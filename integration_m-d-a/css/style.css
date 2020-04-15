@@ -1,0 +1,651 @@
+@font-face {
+    font-family: 'proximaNova';
+    src: url('FontsFree-Net-ProximaNova-Regular.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: proximaNova;
+}
+
+#patron {
+    display: none;
+    opacity: 0.50;
+    position: absolute;
+    z-index: 1000;
+    width: 99vw;
+}
+
+body {
+    background-color: #121F32;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+/* ==================== HEADER ==================== */
+
+header {
+    display: flex;
+}
+
+/* ========= LOGO ======== */
+
+header>div {
+    display: flex;
+    margin: 30px 0px 0px 8vw;
+}
+
+header>div>img {
+    margin: -6px 0px 0px -47px;
+    width: 66px;
+    z-index: 1;
+}
+
+h1 {
+    position: relative;
+    font-size: 20px;
+    font-weight: 300;
+    z-index: 2;
+    letter-spacing: 1px;
+    line-height: 1.1;
+}
+
+h1::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 16px;
+    width: 40px;
+    border: 0.4px white solid;
+}
+
+/* ======= BUTTON MENU ========= */
+
+header>button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 20px;
+    font-size: 22px;
+    line-height: 2;
+    border: none;
+    z-index: 11;
+    background-color: #121F32;
+}
+
+header>button::after {
+    position: absolute;
+    content: "";
+    left: 19px;
+    top: 50px;
+    width: 46px;
+    border: 4.7px solid blue;
+    z-index: -1;
+}
+
+/* ==================== MAIN ==================== */
+
+/* =========== First Container =========== */
+
+#first-container {
+    display: flex;
+    height: 950px;
+}
+
+/* ====== first item ===== */
+
+#first-item {
+    position: relative;
+    flex-basis: 48.3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#first-item>h2 {
+    font-size: 80px;
+    margin-bottom: 100px;
+}
+
+#first-item>p {
+    position: absolute;
+    left: 130px;
+    bottom: 150px;
+    writing-mode: vertical-lr;
+    z-index: 1;
+}
+
+#first-item>div {
+    padding: 100px 190px;
+    background-color: #0E1B2E;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+/* ====== second item ===== */
+
+#second-item {
+    background-color: #14243D;
+    flex-basis: 42.2vw;
+    max-width: 700px;
+}
+
+#container-main-img {
+    position: relative;
+}
+
+#second-item>div>img:nth-child(1) {
+    margin-top: -95px;
+    width: 100%;
+}
+
+#second-item>div>img:nth-child(2) {
+    background-color: #0006B2;
+    position: absolute;
+    width: 50px;
+    padding: 30px;
+    left: 0px;
+    bottom: 0px;
+    margin-top: -200px;
+    border-top-right-radius: 50px;
+}
+
+#second-item>figcaption {
+    padding: 50px
+}
+
+#second-item>figcaption>p:nth-child(1) {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+#second-item>figcaption>p:nth-child(2) {
+    font-size: 16px;
+    line-height: 2;
+    margin-bottom: 20px;
+}
+
+#second-item>figcaption>a {
+    position: relative;
+    text-decoration: none;
+    z-index: 1;
+}
+
+#second-item>figcaption>a::after {
+    position: absolute;
+    content: "";
+    left: -1px;
+    top: 15px;
+    width: 135px;
+    border: 4.7px solid blue;
+    z-index: 0;
+}
+
+/* ====== social item ===== */
+
+#social-link-container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 9.5vw;
+    max-width: 9.5vw;
+    align-items: center;
+}
+
+#social-link-container>div {
+    margin-top: 150px;
+}
+
+.social-link-item {
+    writing-mode: vertical-lr;
+    margin-top: 50px;
+}
+
+#social-link-container>p {
+    margin-top: 300px;
+}
+
+#social-link-container>p>span {
+    font-size: 40px;
+}
+
+/* =========== Second Container =========== */
+
+#color {
+    background-color: #0E1B2E;
+}
+
+#second-container {
+    background-color: #121F32;
+    display: flex;
+    height: 825px;
+    margin-left: 5vw;
+}
+
+/* =========== Title =========== */
+
+#second-container>h2 {
+    flex-basis: 42vw;
+    font-size: 67px;
+    display: flex;
+    justify-content: center;
+    padding-top: 170px;
+}
+
+/* =========== List =========== */
+
+#second-container>ul {
+    position: relative;
+    flex-basis: 43vw;
+    margin-top: 180px;
+}
+
+#second-container>ul>li {
+    list-style-type: none;
+    color: white;
+    font-size: 38px;
+    padding: 20px;
+    border-top: solid grey 0.5px;
+}
+
+#second-container>ul>li:nth-child(6) {
+    border-bottom: solid grey 0.5px;
+}
+
+#second-container>ul>img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 240px;
+}
+
+/* =========== Third Container =========== */
+
+#third-container {
+    display: flex;
+    flex-direction: column;
+    height: 1025px;
+    margin-right: 145px;
+    background-color: #0E1B2E;
+}
+
+/* =========== Title =========== */
+
+#third-container>div:nth-child(1) {
+    height: 140px;
+    margin-top: 140px;
+    margin-right: 120px;
+    margin-left: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#third-container>div:nth-child(1)>h2 {
+    font-size: 65px;
+}
+
+#third-container>div:nth-child(1)>a {
+    text-decoration: none;
+    position: relative;
+}
+
+#third-container>div:nth-child(1)>a::after {
+    position: absolute;
+    content: "";
+    left: 0px;
+    top: 15px;
+    width: 60px;
+    border: 4.7px solid blue;
+    z-index: 0;
+}
+
+/* =========== Img =========== */
+
+#third-container>div:nth-child(2) {
+    display: flex;
+    margin-right: -400px;
+    margin-left: 180px;
+    justify-content: space-around;
+}
+
+#third-container>div:nth-child(2)>figure {
+    position: relative;
+}
+
+#third-container>div:nth-child(2)>figure>img {
+    width: 430px;
+}
+
+#third-container>div:nth-child(2)>figure>figcaption {
+    position: absolute;
+    left: -80px;
+    bottom: 50px;
+    z-index: 2;
+}
+
+#third-container>div:nth-child(2)>figure>figcaption>h3 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+#third-container>div:nth-child(2)>figure>figcaption>a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+#third-container>div:nth-child(2)>figure>figcaption>a>span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 200px;
+    border: 1px solid #ffffff;
+    margin-right: 6px;
+}
+
+/* =========== Fourth Container =========== */
+
+#fourth-container {
+    display: flex;
+    height: 215px;
+    align-items: center;
+    justify-content: center;
+}
+
+#fourth-container>div {
+    display: flex;
+}
+
+#fourth-container>div>figure {
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#fourth-container>div>figure:nth-child(1) {
+    width: 160px;
+}
+
+#fourth-container>div>figure:nth-child(1)>img {
+    margin-right: 10px;
+}
+
+#fourth-container>div>figure:nth-child(2) {
+    width: 130px;
+    align-items: center;
+}
+
+#fourth-container>div>figure:nth-child(2)>img {
+    margin-right: 10px;
+}
+
+#fourth-container>div>figure:nth-child(3) {
+    width: 120px;
+    font-size: 20px;
+}
+
+#fourth-container>div>figure:nth-child(3)>img {
+    margin-right: 10px;
+}
+
+#fourth-container>div>p {
+    text-align: center;
+    width: 100px;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#fourth-container>div>figure:nth-child(5) {
+    width: 120px;
+    font-size: 18px;
+}
+
+#fourth-container>div>figure:nth-child(5)>img {
+    margin-right: 10px;
+}
+
+/* =========== Fifth Container =========== */
+
+#fifth-container {
+    display: flex;
+    flex-direction: column;
+    height: 1325px;
+}
+
+#fifth-container>div {
+    background-color: #0E1B2E;
+    margin-left: 130px;
+    height: 600px;
+}
+
+#fifth-container>div>h2 {
+    font-size: 65px;
+    margin-left: 110px;
+    margin-top: 140px;
+}
+
+#fifth-container>figure>div {
+    display: flex;
+    margin-top: -320px;
+    justify-content: flex-end;
+}
+
+#fifth-container>figure>div>img {
+    width: 85vw;
+    margin-bottom: 50px;
+}
+
+#fifth-container>figure>figcaption {
+    width: 62vw;
+    height: 330px;
+    margin-left: 22vw;
+}
+
+#fifth-container>figure>figcaption>p {
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+#fifth-container>figure>figcaption>a {
+    text-decoration: none;
+    position: relative;
+    font-size: 18px;
+}
+
+#fifth-container>figure>figcaption>a::after {
+    position: absolute;
+    content: "";
+    left: -1px;
+    top: 17px;
+    width: 150px;
+    border: 7px solid blue;
+    z-index: 0;
+}
+
+/* ==================== Footer ==================== */
+
+footer {
+    background-color: #002855;
+    margin-right: 150px;
+    height: 520px;
+}
+
+footer>div:nth-child(1) {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 250px;
+}
+
+footer>div:nth-child(1)>p {
+    font-size: 70px;
+    margin-bottom: 30px;
+}
+
+footer>div:nth-child(1)>a {
+    font-size: 40px;
+}
+
+footer>div:nth-child(2) {
+    display: flex;
+    height: 270px;
+    margin-left: 250px;
+}
+
+footer>div:nth-child(2)>p {
+    display: flex;
+    align-items: center;
+}
+
+footer>div:nth-child(2)>div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: space-around;
+    margin-left: 610px;
+    margin-top: 80px;
+    width: 300px;
+    height: 130px;
+}
+
+footer>div:nth-child(2)>div>a {
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1400px) {
+    #third-container>div:nth-child(2) {
+        margin-left: 0px;
+    }
+    #third-container>div:nth-child(2)>figure>figcaption {
+        left: 0px;
+    }
+    #second-container {
+        height: 0px;
+        height: 1025px;
+        flex-direction: column;
+        align-items: center;
+    }
+    #second-container>h2 {
+        flex-basis: 0vw;
+    }
+    #second-container>ul {
+        width: 700px;
+    }
+    footer>div:nth-child(1) {
+        margin-left: 0px;
+    }
+    footer>div:nth-child(2) {
+        margin-left: 0px;
+    }
+    footer {
+        margin-right: 0px;
+    }
+    footer>div:nth-child(2)>div {
+        width: 600px;
+    }
+    footer>div:nth-child(2)>p {
+        width: 500px;
+    }
+    #third-container>div:nth-child(1) {
+        margin-top: 0px;
+        margin-top: 100px;
+    }
+    #third-container {
+        height: 925px;
+    }
+}
+
+@media screen and (max-width: 1036px) {
+    #first-container {
+        flex-direction: column;
+    }
+    #first-item>div {
+        display: none;
+    }
+    #first-item>p {
+        display: none;
+    }
+    #second-item {
+        max-width: none;
+        flex-basis: 100vw;
+    }
+    #first-item {
+        flex-basis: 100vw;
+        margin-top: 40px;
+    }
+    #second-container {
+        margin-left: 0vw;
+        margin-top: 600px;
+    }
+    #social-link-container {
+        flex-direction: row;
+    }
+    #social-link-container {
+        display: none;
+    }
+    #third-container {
+        margin-right: 0;
+    }
+    #third-container>div:nth-child(1) {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    @media screen and (max-width: 1400px) {
+        #second-container>ul {
+            width: 550px;
+        }
+        #third-container {
+            height: 2100px;
+        }
+        #third-container>div:nth-child(2) {
+            margin-right: 0;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+        #third-container>div:nth-child(2)>figure>img {
+            margin-bottom: 30px;
+        }
+        #third-container>div:nth-child(1)>a {
+            margin-right: 10px;
+        }
+        #third-container>div:nth-child(1)>h2 {
+            margin-left: 10px;
+        }
+        #fifth-container>div {
+            margin-left: 0;
+        }
+        #fifth-container>figure>div {
+            justify-content: initial;
+        }
+        #fifth-container>figure>div>img {
+            width: 100vw;
+            margin-bottom: 100px;
+        }
+        footer>div:nth-child(2) {
+            flex-direction: column;
+        }
+        footer>div:nth-child(2)>div {
+            margin-left: 0px;
+        }
+        footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #fifth-container>figure>figcaption {
+            width: 90vw;
+            margin-left: 2vw;
+        }
+    }
