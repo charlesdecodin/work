@@ -7,9 +7,9 @@ fetch('http://localhost:3000/posts')
         for (let i = 0; i < json.length; i++) {
             // create div
             let div = document.createElement('DIV')
-            div.className = "container shadow m-5 d-flex flex-column"
+            div.className = "article container shadow m-5 d-flex flex-column"
             articles.appendChild(div)
-            // creat title
+            // create title
             let title = document.createElement('H2')
             title.className = " display-5 font-weight-bold m-5"
             div.appendChild(title)
@@ -34,24 +34,53 @@ fetch('http://localhost:3000/posts')
             btn.appendChild(txtBtn)
         }
     })
+
 fetch('http://localhost:3000/comments')
     .then(response => response.json())
     .then(result => {
         console.log(result);
         //create comment
         let comment = document.querySelectorAll(".comment")
-        console.log(comment);
+        let article = document.querySelectorAll(".article")
+        console.log(article);
         for (let i = 0; i < comment.length; i++) {
+            let commentDiv = document.createElement('div')
+            commentDiv.className = "d-none commentDiv"
+            article[i].appendChild(commentDiv)
+            let selectCommentDiv = document.querySelectorAll(".commentDiv")
             comment[i].addEventListener("click", function () {
-                comment[i].style.backgroundColor = "#A6170A"
-                console.log(i)
-                for (let j = 0; j < result.length; j++) {
-                    if (result[j].postId == i + 1) {
-                        console.log(result[j].name)
-                    }
+                if (selectCommentDiv[i].className === "d-none commentDiv") {
+                    selectCommentDiv[i].className = "d-block commentDiv"
+                } else {
+                    selectCommentDiv[i].className = "d-none commentDiv"
                 }
 
             })
-        }
 
+            for (let j = 0; j < result.length; j++) {
+                if (result[j].postId == i + 1) {
+                    //create div comment
+                    let oneDivComment = document.createElement('div')
+                    oneDivComment.className = "border-top border-bottom"
+                    commentDiv.appendChild(oneDivComment)
+                    // create mail adress
+                    let mailP = document.createElement('p')
+                    mailP.className = "mail"
+                    oneDivComment.appendChild(mailP)
+                    let mail = document.createTextNode(result[j].email)
+                    mailP.appendChild(mail)
+                    // create name comment
+                    let commentTitle = document.createElement("h3")
+                    oneDivComment.appendChild(commentTitle)
+                    let commentTitleTxt = document.createTextNode(result[j].name)
+                    commentTitle.appendChild(commentTitleTxt)
+                    // create body comment
+                    let commentP = document.createElement('p')
+                    commentP.className = "commentBody"
+                    oneDivComment.appendChild(commentP)
+                    let commentBodyTxt = document.createTextNode(result[j].body)
+                    commentP.appendChild(commentBodyTxt)
+                }
+            }
+        }
     })
