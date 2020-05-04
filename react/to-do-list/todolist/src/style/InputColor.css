@@ -1,0 +1,15 @@
+.first-radio>label {
+    color: #E7425D;
+}
+
+.first-radio>input {
+    background-color: red;
+}
+
+.second-radio>label {
+    color: #E77A42;
+}
+
+.third-radio>label {
+    color: #E7CC42;
+}
