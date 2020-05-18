@@ -58,7 +58,7 @@ const getUsers = (request, response) => {
     let path = request.query
     let title = request.query.title
     let userId = request.query.userid
-
+    console.log(userId)
     //Request all posts
     if(Object.keys(path).length === 0){
       pool.query('SELECT * FROM posts ORDER BY id ASC', (error, results) => {
@@ -103,6 +103,7 @@ const getUsers = (request, response) => {
   const getComments = (request, response) => {
     const path = request.query
     const postId = request.query.postid
+    console.log(postId)
     if(Object.keys(path).length === 0){
       pool.query('SELECT * FROM comments ORDER BY id ASC', (error, results) => {
         if (error) {
