@@ -37,9 +37,9 @@ export default function User({ id }) {
 
 
                 <p className="mt-4 mt-lg-2 text-center col-6 col-lg-2 col-xl-2 offset-xl-1">Website: {user.website}</p>
-                <p className="mt-4 mt-lg-2 text-center col-6 col-lg-3 col-xl-3"> Company: {user.company && user.company.name}</p>
+                <p className="mt-4 mt-lg-2 text-center col-6 col-lg-3 col-xl-3"> Company: {user.company && user.company_name}</p>
 
-                <p className="my-4 text-center col-12 h4">{user.company && user.company.catchPhrase}</p>
+                <p className="my-4 text-center col-12 h4">{user.company && user.company_catchPhrase}</p>
             </div>
 
             <div className="d-flex flex-wrap justify-content-center" >

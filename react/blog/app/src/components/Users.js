@@ -29,8 +29,8 @@ export default function Users() {
                                     <MDBCardTitle>{item.name}</MDBCardTitle>
                                     <MDBCardText>
                                         <p>{item.website}</p>
-                                        <p>{item.company.name}</p>
-                                        <p>{item.company.catchPhrase}</p>
+                                        <p>{item.company_name}</p>
+                                        <p>{item.company_catchPhrase}</p>
                                     </MDBCardText>
                                     <Link to={`/${item.id}`}>
                                         <MDBBtn color="#e0e0e0 grey lighten-2" style={{ color: "#0d47a1" }}>Profil</MDBBtn>

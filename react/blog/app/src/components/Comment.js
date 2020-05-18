@@ -7,14 +7,14 @@ export default function Comment({ id }) {
 
 
     const fetchComments = async () => {
-        const reponse = await fetch(`http://localhost:4000/comments?postId=${id}`);
+        const reponse = await fetch(`http://localhost:4000/comments?postid=${id}`);
         const data = await reponse.json()
         setComments(data)
     }
     const fetchPost = async () => {
         const reponse = await fetch(`http://localhost:4000/posts/${id}`);
         const data = await reponse.json()
-        setUniquePost(data)
+        setUniquePost(data[0])
     }
 
 
