@@ -1,3 +1,19 @@
 {
-  "todos": []
+  "todos": [
+    {
+      "text": "acheter du pain",
+      "color": "#E77A42",
+      "id": "9ce8cd06-f102-4e24-aaab-e7b29add1a14"
+    },
+    {
+      "text": "acheter des pommes",
+      "color": "#E7CC42",
+      "id": "f94294ed-21cb-43e3-b0b7-9018f94383e7"
+    },
+    {
+      "text": "acheter des chaussettes",
+      "color": "#E7425D",
+      "id": "61115414-a184-4a1e-bef2-4810bec1fe0c"
+    }
+  ]
 }

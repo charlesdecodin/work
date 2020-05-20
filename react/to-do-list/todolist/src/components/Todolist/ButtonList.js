@@ -15,7 +15,8 @@ export default function ButtonList(props) {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                text: props.updateItem.text
+                text: props.updateItem.text,
+                color: props.updateItem.color
             })
         }).then(context.fetchData)
 
