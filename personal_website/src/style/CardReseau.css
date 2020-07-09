@@ -1,0 +1,48 @@
+.reseau{
+    width: 400px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    padding: 15px 0px 15px 0px;
+}
+
+.logo-reseau{
+    width: 50px;
+}
+
+.mail-icon{
+    padding: 10px;
+}
+
+.linkedin-icon{
+    width: 56px;
+}
+
+.github-icon{
+    padding: 2px;
+}
+
+@media screen and (max-width: 1456px){
+    .reseau{
+        flex-direction: column;
+        width: 12%;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .logo-reseau{
+        width: 3vw;
+    }
+    .linkedin-icon{
+        width: 3.5vw;
+    }
+
+}
+@media screen and (max-width: 982px){
+    .logo-reseau{
+        width: 35px;
+    }
+    .linkedin-icon{
+        width: 45px;
+    }
+}

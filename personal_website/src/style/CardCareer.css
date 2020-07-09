@@ -1,0 +1,31 @@
+.career{
+    margin-left: 2vw;
+    margin-top: 40px;
+    width: 44%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1E9DAE;
+    font-size: 33px;
+}
+.career-up{
+    height: 833px;
+    margin-top: -522px;
+}
+
+.career-down{
+    height: 268px;
+}
+
+@media screen and (max-width: 1456px){
+    .career-up{
+        height: 907px;
+        margin-top: -599px;
+    }
+}
+
+@media screen and (max-width: 982px){
+    .career{
+        width: 48vw;
+    }
+}
