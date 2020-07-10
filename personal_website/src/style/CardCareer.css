@@ -6,8 +6,13 @@
     justify-content: center;
     align-items: center;
     color: #1E9DAE;
-    font-size: 33px;
+    font-size: 35px;
+    text-decoration: none;
 }
+.career>h3{
+    font-weight: 500;
+}
+
 .career-up{
     height: 833px;
     margin-top: -522px;
@@ -45,7 +50,7 @@
     }
     .career-down{
         margin-top: 40px;
-        min-height: 150px;
+        min-height: 200px;
     }
 
 }

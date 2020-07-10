@@ -10,8 +10,8 @@ export default function CardCareer({setToggle, toggle}) {
     }
 
     return (
-        <div onClick={showCareer} className={toggle?"card career career-up": "card career career-down"}>
-            <p>Parcours</p>
-        </div>
+        <a href="#title" onClick={showCareer} className={toggle?"card career career-up": "card career career-down"}>
+            <h3 id="title">PARCOURS</h3>
+        </a>
     )
 }

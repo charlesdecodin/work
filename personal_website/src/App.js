@@ -5,8 +5,11 @@ import CardText from './components/CardText.jsx'
 import CardSkill from './components/CardSkill.jsx'
 import CardProject from './components/CardProject.jsx';
 import './App.css';
-
 import CardCareer from './components/CardCareer.jsx';
+
+window.addEventListener('resize', ()=>{
+  console.log(window.innerWidth);
+})
 
 function App() {
   const[toggle, setToggle] = useState(false)

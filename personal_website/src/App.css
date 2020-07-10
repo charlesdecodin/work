@@ -1,9 +1,8 @@
 .main{
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   width: 100%;
- 
+  overflow-x: hidden;
 }
 
 .container-profil{
@@ -29,6 +28,10 @@
 }
 
 @media screen and (max-width: 1456px){
+  .main{
+    flex-wrap: wrap;
+    overflow-x: unset;
+  }
   .container-profil{
     flex-direction: row;
     flex-wrap: wrap;
@@ -64,6 +67,5 @@
 @media screen and (max-width: 548px){
    .container-profil{
      flex-direction: column;
-     background-color: pink;
    }
 }
