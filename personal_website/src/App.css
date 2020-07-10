@@ -60,3 +60,10 @@
     flex-direction: column;
   }
 }
+
+@media screen and (max-width: 548px){
+   .container-profil{
+     flex-direction: column;
+     background-color: pink;
+   }
+}

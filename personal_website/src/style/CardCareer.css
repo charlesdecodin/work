@@ -18,6 +18,10 @@
 }
 
 @media screen and (max-width: 1456px){
+    .career{
+        margin-bottom: 40px;
+    }
+
     .career-up{
         height: 907px;
         margin-top: -599px;
@@ -27,5 +31,22 @@
 @media screen and (max-width: 982px){
     .career{
         width: 48vw;
+        margin-left: 2vw;
     }
 }
+@media screen and (max-width: 730px){
+    .career{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .career-up{
+        min-height: 833px;
+        margin-top: 40px;
+    }
+    .career-down{
+        margin-top: 40px;
+        min-height: 150px;
+    }
+
+}
+

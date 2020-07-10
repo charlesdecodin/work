@@ -8,7 +8,6 @@
 
 .skills-up{
     width: 70vw;
-    
 }
 
 .skills-down{
@@ -20,6 +19,7 @@
     color: #1E9DAE;
     font-weight: 500;
 }
+
 
 
 .container-logo{
@@ -106,8 +106,35 @@
         margin: 0px 30px;
     }
     .container-logo-down{
-        
         margin: 0px 10px;
     }
 
+}
+
+@media screen and (max-width: 730px){
+    .skills{
+        min-height: 500px ;
+    }
+    .skills-down{
+        width: 90vw;
+    }
+    .container-logo-down{
+       margin: 0px 20px;
+    }
+    .container-logo-down>div>img{
+        width: auto;
+    }
+    .skills-up>div{
+        margin-top: 0px;
+     }
+}
+
+@media screen and (max-width: 548px){
+    .container-logo{
+        justify-content: space-between;
+        margin: 0px 10px;
+    }
+    .container-logo>div>img{
+        width: 10vw;
+    }
 }

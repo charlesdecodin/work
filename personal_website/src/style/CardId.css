@@ -58,6 +58,17 @@
     }
 }
 
-@media screen and (max-width: 982px){
-
+@media screen and (max-width: 548px){
+    .identity{
+        width: 100%; 
+    }
+    .container-image{
+        margin-left: 0;
+    }
+    .name{
+        margin-left: 0;
+    }
+    .work{
+        margin-left: 0;
+    }
 }
