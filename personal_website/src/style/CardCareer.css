@@ -3,33 +3,101 @@
     margin-top: 40px;
     width: 44%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #1E9DAE;
-    font-size: 35px;
     text-decoration: none;
 }
+
 .career>h3{
     font-weight: 500;
+    color: #4FCBDF;
+    font-size: 35px;
+}
+
+.career>div>div>h4{
+    color: #4FCBDF;
+}
+
+.career>div>div>p>span:nth-child(1){
+    color: #1E9DAE;
+}
+.career>div>div>p>span:nth-child(2){
+    color: #FFF;
+}
+.career>div>div>p>span:nth-child(3){
+    color: #777;
+    font-weight: 300;
 }
 
 .career-up{
-    height: 833px;
+    height: 830px;
     margin-top: -522px;
+    overflow: hidden;
+   /*  animation-name: drop-up;
+    animation-duration: 3s; */
+   /*  transition: height .3s linear, margin-top .3s linear; */
+}
+
+@keyframes drop-up{
+    from{
+        height: 268px;
+        margin-top: 40px;
+    }
+    50%{
+        height: 268px;
+        margin-top: 40px;
+    }
+    to{
+        height: 830px;
+        margin-top: -522px;
+    }
+}
+@keyframes drop-down{
+    from{
+        height: 830px;
+        margin-top: -522px;
+    }
+    to{
+        height: 268px;
+        margin-top: 40px;
+    }
 }
 
 .career-down{
     height: 268px;
+    
+  /*   animation-name: drop-down;
+    animation-duration: 3s; */
 }
+
+/* .career-up>div{
+    display: block;
+} */
+
+.career-up>h3{
+    margin: 60px 0px 30px 0px;
+}
+
+.career-up>div>div{
+    margin: 50px;
+    padding: 20px 20px 40px 20px;
+    background-color: #353b42;
+}
+
+/* .career-down>div{
+    display: none;
+} */
 
 @media screen and (max-width: 1456px){
     .career{
         margin-bottom: 40px;
+        width: 50%;
     }
 
     .career-up{
-        height: 907px;
-        margin-top: -599px;
+        height: 857px;
+        margin-top: -550px;
     }
 }
 
@@ -38,6 +106,12 @@
         width: 48vw;
         margin-left: 2vw;
     }
+    .career-up>h3 {
+        margin-top: 30px;
+    }
+    .career-up>div>div {
+        margin: 20px;
+    }
 }
 @media screen and (max-width: 730px){
     .career{
@@ -45,13 +119,15 @@
         margin-left: 0px;
     }
     .career-up{
-        min-height: 833px;
+       /*  height: auto; */
         margin-top: 40px;
+        overflow: visible;
+        min-height: 850px;
     }
     .career-down{
         margin-top: 40px;
         min-height: 200px;
     }
-
 }
+
 

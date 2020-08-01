@@ -27,21 +27,27 @@
   
 }
 
-@media screen and (max-width: 1456px){
+@media screen and (max-width: 1456px) {
   .main{
     flex-wrap: wrap;
     overflow-x: unset;
+  
   }
   .container-profil{
     flex-direction: row;
     flex-wrap: wrap;
-
-    width: 69.5vw;
-    margin-left: 20px;
+    width: 87.5vw;
   }
+  .second-column{
+    width: 87.5vw;
+  }
+  .second-row{
+    width: 100%;
+  }
+  
 }
 
-@media screen and (max-width: 982px){
+@media screen and (max-width: 982px) {
   .container-profil{
     flex-direction: row;
     flex-wrap: wrap;
@@ -53,18 +59,17 @@
   }
   .second-row{
     display: flex;
-    width: 100%;
     max-height: 300px;
   }
 }
 
-@media screen and (max-width: 731px){
+@media screen and (max-width: 731px) {
   .second-row{
     flex-direction: column;
   }
 }
 
-@media screen and (max-width: 548px){
+@media screen and (max-width: 548px) {
    .container-profil{
      flex-direction: column;
    }

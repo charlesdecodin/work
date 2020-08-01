@@ -23,7 +23,7 @@
     padding: 2px;
 }
 
-@media screen and (max-width: 1456px){
+@media screen and (max-width: 1456px) {
     .reseau{
         flex-direction: column;
         width: 12%;
@@ -38,7 +38,7 @@
     }
 
 }
-@media screen and (max-width: 982px){
+@media screen and (max-width: 982px) {
     .logo-reseau{
         width: 35px;
     }
@@ -46,7 +46,7 @@
         width: 45px;
     }
 }
-@media screen and (max-width: 548px){
+@media screen and (max-width: 548px) {
     .reseau{
         flex-direction: row;
         width: 100%;

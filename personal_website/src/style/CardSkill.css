@@ -14,23 +14,36 @@
     width: 36vw;
 }
 
-.skills>h2{
+@keyframes slide-left{
+    from{
+        width: 70vw;
+    }
+    to{
+        width: 36vw;
+    }
+}
+@keyframes slide-right{
+    from{
+        width: 36vw;
+    }
+    50%{
+        width: 36vw;
+    }
+    to{
+        width: 70vw;
+    }
+}
+
+
+.skills>h3{
     margin: 30px;
-    color: #1E9DAE;
+    font-size: 27px;
+    color: #4FCBDF;
     font-weight: 500;
 }
 
-
-
 .container-logo{
     display: flex;
-}
-
-.container-logo-up{
-    justify-content: space-evenly;
-    margin: 0px 100px;
-}
-.container-logo-down{
     justify-content: space-between;
     margin: 0px 50px;
 }
@@ -68,14 +81,40 @@
 }
 
 
-@media screen and (max-width: 1456px){
+@media screen and (max-width: 1456px) {
     
     .skills{
-        min-height: 600px;
+        min-height: 550px;
+        width: 100%;
+        margin-left: 0;
     }
 
     .skills-up>div{
        margin-top: 50px;
+    }
+
+    .skills-down{
+        width: 42.5vw;
+    }
+
+    @keyframes slide-left{
+        from{
+            width: 100%;
+        }
+        to{
+            width: 42.5vw;
+        }
+    }
+    @keyframes slide-right{
+        from{
+            width: 42.5vw;
+        }
+        50%{
+            width: 42.5vw;
+        }
+        to{
+            width: 100%;
+        }
     }
 
     .container-logo-down{
@@ -85,10 +124,33 @@
     .container-logo-down>div>img{
         width: 40px;
     }
+    .container-logo-up>div>img{
+        width: 60px;
+    }
+
+    @keyframes zoom{
+        from{
+            width: 40px;
+        }
+        50%{
+            width: 40px;
+        }
+        to{
+            width: 60px;
+        }
+    }
+    @keyframes zoom-out{
+        from{
+            width: 60px;
+        }
+        to{
+            width: 40px;
+        }
+    }
 
 }
 
-@media screen and (max-width: 982px){
+@media screen and (max-width: 982px) {
     .skills{
         margin-left: 0px;
     }
@@ -99,6 +161,26 @@
     
     .skills-down{
         width: 42.5vw;
+    }
+
+    @keyframes slide-left{
+        from{
+            width: 90vw;
+        }
+        to{
+            width: 42.5vw;
+        }
+    }
+    @keyframes slide-right{
+        from{
+            width: 42.5vw;
+        }
+        50%{
+            width: 42.5vw;
+        }
+        to{
+            width: 90vw;
+        }
     }
 
     .container-logo-up{
@@ -122,14 +204,14 @@
        margin: 0px 20px;
     }
     .container-logo-down>div>img{
-        width: auto;
+        width: 60px;
     }
     .skills-up>div{
         margin-top: 0px;
      }
 }
 
-@media screen and (max-width: 548px){
+@media screen and (max-width: 548px) {
     .container-logo{
         justify-content: space-between;
         margin: 0px 10px;

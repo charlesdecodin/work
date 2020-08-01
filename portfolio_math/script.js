@@ -1,8 +1,11 @@
+const navbar = document.querySelector(".navbar")
 const nav = document.querySelector("nav")
 const btn = document.querySelector(".burger")
+let position = pageYOffset
 
 nav.className = "nav_hidden"
-console.log(nav);
+
+//toggle menu
 
 btn.addEventListener('click',()=>{
     if(nav.className == "nav_hidden"){
@@ -10,5 +13,19 @@ btn.addEventListener('click',()=>{
     }else{
         nav.className = "nav_hidden" 
     }
-   
 })
+
+//hide and show navbar
+
+window.addEventListener('scroll',()=>{
+    if(position < pageYOffset){
+        navbar.style.marginTop = -196 + "px"
+    }else{
+        navbar.style.marginTop = -100 + "px"
+    }
+    position = pageYOffset
+})
+
+var config = { method: 'POST',
+               mode: 'cors',
+               cache: 'default' };

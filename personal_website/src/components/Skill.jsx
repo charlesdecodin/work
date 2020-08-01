@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 
-export default function Skill({image, titleText, setContent, bodyText, content, colorTitle}) {
+export default function Skill({image, titleText, setContent, bodyText, content, colorTitle, styleLogoLanguage}) {
     const toggleText = () =>{
         setContent({
             title: titleText,
@@ -10,8 +10,8 @@ export default function Skill({image, titleText, setContent, bodyText, content, 
     }
 
     return (
-        <div onClick={toggleText} className={content.title === titleText? 'selected': '' }>
-            <img src={image} alt="" />
+        <div onClick={toggleText} className={content.title === titleText? 'selected': '' } >
+            <img style={styleLogoLanguage} src={image} alt="" />
         </div>
     )
 }

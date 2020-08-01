@@ -14,13 +14,13 @@
     <header class="navbar">
         <h1>Matthieu Staelens</h1>
         <img class="burger" src="./images/menu_burger.svg" alt="">
-        <nav class="nav_hidden">
-            <li> <a href="">Accueil</a> </li>
-            <li> <a href="">Qui suis-je ?</a></li>
-            <li> <a href="">Expérience</a></li>
-            <li> <a href="">Parcours scolaire</a></li>
-            <li> <a href="">Compétences</a></li>
-            <li> <a href="">Contact</a></li>
+        <nav class="nav">
+            <li> <a href="#container_accueil">Accueil</a> </li>
+            <li> <a href="#container_description">Qui suis-je ?</a></li>
+            <li> <a href="#container_xp">Expérience</a></li>
+            <li> <a href="#container_study">Parcours scolaire</a></li>
+            <li> <a href="#container_competence">Compétences</a></li>
+            <li> <a href="#container_contact">Contact</a></li>
             <a href="https://www.linkedin.com/in/matthieu-staelens-555512118/"><img class="logo_linkedin"
                     src="./images/linkedin_logo.png" alt="lien linkedin"></a>
         </nav>
@@ -28,14 +28,14 @@
 
     <div class="parallax">
 
-        <div class="container_accueil">
+        <div id="container_accueil">
             <p>Bonjour ! Je m'appelle Matthieu Staelens</p>
             <p>Je suis actuellement en quête d'une entreprise pour réaliser mon Master <strong>Communication et
                     Marketing</strong> en alternance !</p>
         </div>
     </div>
 
-    <div class="container_description">
+    <div id="container_description">
         <div class="text_description">
             <h2 class="secondary_title">Qui suis-je ? <span>Mon expérience</span></h2>
             <p>
@@ -51,7 +51,7 @@
         <img class="image_description" src="./images/image_equipe.jpg" alt="coworking">
     </div>
 
-    <div class="container_xp">
+    <div id="container_xp">
         <div>
             <h2 class="secondary_title">Expériences professionnelles <span>Rôles et postes occupés</span></h2>
         </div>
@@ -59,7 +59,7 @@
             <div>
                 <img src="./images/pole_emploi.png" alt="">
                 <p class="date_xp">Septembre 2018 - Mai 2019</p>
-                <h3><span>Service civique - <a href="">Pôle emploi</a></span><span>(Halluin)</span></h3>
+                <h3><span>Service civique - <a href="https://www.pole-emploi.fr/accueil/">Pôle emploi</a></span><span>(Halluin)</span></h3>
                 <p class="text_xp">
                     C'est après plusieurs rendez-vous avec ma conseillère Pôle emploi qu'elle m'a proposé de faire un
                     service civique au sein de cette agence.
@@ -72,7 +72,7 @@
             <div>
                 <img src="./images/balta.png" alt="">
                 <p class="date_xp">Décembre 2017 - Mars 2018</p>
-                <h3><span>Emballeur - <a href="">Balta Group </a></span> <span>(Belgique, Waregem)</span></h3>
+                <h3><span>Emballeur - <a href="https://www.baltagroup.com/fr/">Balta Group </a></span> <span>(Belgique, Waregem)</span></h3>
                 <p class="text_xp">
                     Embauché comme emballeur de tapis, je travaillais selon 2 rythmes horaires différents. Matin ou
                     Soir.
@@ -84,7 +84,7 @@
             <div>
                 <img src="./images/croque_gel.png" alt="">
                 <p class="date_xp">Novembre 2017</p>
-                <h3><span> Commercial - <a href="">Croque Gel </a> </span><span>(Villeneuve d'Ascq)</span></h3>
+                <h3><span> Commercial - <a href="https://www.croquegel.com/">Croque Gel </a> </span><span>(Villeneuve d'Ascq)</span></h3>
                 <p class="text_xp">
                     Au poste de commercial, j'arpentais les rues de diverses villes sur la région Lilloise en porte à
                     porte
@@ -96,31 +96,31 @@
         </div>
     </div>
 
-    <div class="container_study">
+    <div id="container_study">
         <h2 class="secondary_title">Éducation <span>Vivre et apprendre</span></h2>
         <div>
             <div>
                 <img src="./images/image_diplome.svg" alt="">
                 <p class="date_study">2019 - 2020</p>
                 <p class="text_study">Bachelor Développement Commercial & Marketing</p>
-                <a class="link_study" href="">Alésia Formation</a>
+                <a class="link_study" href="https://www.alesia-formation.fr/">Alésia Formation</a>
             </div>
             <div>
                 <img src="./images/image_diplome.svg" alt="">
                 <p class="date_study">2015 - 2017</p>
                 <p class="text_study">BTS Négociation Relation Client</p>
-                <a class="link_study" href="">EIC Tourcoing</a>
+                <a class="link_study" href="https://www.eic-tourcoing.fr/">EIC Tourcoing</a>
             </div>
             <div>
                 <img src="./images/image_diplome.svg" alt="">
                 <p class="date_study">2013 - 2015</p>
                 <p class="text_study">Baccalauréat professionnel Vente</p>
-                <a class="link_study" href="">EIC Tourcoing</a>
+                <a class="link_study" href="https://www.eic-tourcoing.fr/">EIC Tourcoing</a>
             </div>
         </div>
 
     </div>
-    <div class="container_competence">
+    <div id="container_competence">
         <h2 class="secondary_title">Mes compétences <span>Astuces du métier</span></h2>
         <div>
             <div class="column_left text_item">
@@ -144,7 +144,7 @@
             <img class="column_right" src="./images/CRM_image.png" alt="">
         </div>
     </div>
-    <div class="container_contact">
+    <div id="container_contact">
         <div>
             <h2 class="secondary_title">Contactez-moi <span>06.17.35.22.52</span></h2>
         </div>
