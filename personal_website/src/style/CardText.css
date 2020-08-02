@@ -12,7 +12,7 @@
     padding: 30px 20px;
 }
 
-@media screen and (max-width: 1456px) {
+@media screen and (max-width: 1540px) {
     .text{
         flex-direction: column;
         width: 100%;

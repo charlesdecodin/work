@@ -27,7 +27,7 @@
   
 }
 
-@media screen and (max-width: 1456px) {
+@media screen and (max-width: 1540px) {
   .main{
     flex-wrap: wrap;
     overflow-x: unset;

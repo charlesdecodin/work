@@ -46,7 +46,7 @@ export default function CardCareer({ setToggle, toggle, setStyleCardSkill, setSt
                 })
             }
         }
-        if (window.innerWidth < 1456){
+        if (window.innerWidth < 1500){
             if(toggle){
                 setStyleLogoLanguage({
                     animationName: "zoom",

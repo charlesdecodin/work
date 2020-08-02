@@ -23,7 +23,7 @@
     padding: 2px;
 }
 
-@media screen and (max-width: 1456px) {
+@media screen and (max-width: 1540px) {
     .reseau{
         flex-direction: column;
         width: 12%;
