@@ -5,7 +5,7 @@
 }
 
 p{
-    font-size: 16px;
+    font-size: 15px;
 }
 
 /* ======== HEADER ========*/
@@ -63,7 +63,6 @@ display: none;
         background-repeat: no-repeat;
         background-size: cover;
         margin: 100px 4vw 0px 4vw;
-        opacity: 0.8;
 }
 
 #container_accueil{
@@ -100,7 +99,7 @@ display: none;
 
 .text_description{
     width: 49.5%;
-    background-color: #F7F7F7; 
+    background-color: #f7f7f7; 
     margin-right: 0.5%;
     display: flex;
     flex-direction: column;
@@ -175,16 +174,12 @@ display: none;
     font-weight: 500;
 }
 
-#container_important>div{
+#container_important>p{
     padding: 30px 8vw 60px 8vw;
     color: #444;
 }
-#container_important>div>p{
-   margin-bottom: 40px;
-   text-align: justify;
-}
 
-#container_important>div>p>span{
+#container_important>p>span{
     font-weight: 600;
 }
 
@@ -219,10 +214,6 @@ display: none;
     padding-top: 60px;
 }
 
-.text_xp>span{
-    font-weight: 600;
-}
-
 .date_xp{
     padding: 30px;
 }
@@ -254,8 +245,7 @@ display: none;
 .text_xp{
     line-height: 2.3;
     padding: 20px 3vw 60px 3vw;
-    text-align: justify;
-
+    text-align: center;
 }
 
 #container_study>div{
@@ -277,7 +267,7 @@ display: none;
     flex-direction: column;
     align-items: center;
     width: 33%;
-    background-color: #F7F7F7;
+    background-color: #f7F7F7;
 }
 
 #container_study>div>div>img{
@@ -314,13 +304,11 @@ display: none;
 
 #container_competence>div>div{
     width: 49%;
-    height: auto;
     background-color: #F7F7F7;
 }
 
 #container_competence>div>img{
     width: 49%;
-    height: auto;
 }
 
 .column_left{
@@ -404,13 +392,6 @@ display: none;
     background-color: #000;
     color: white;
     padding: 10px 0px;
-}
-.image_contact{
-    width: 250px;
-    height: 250px;
-    border-radius: 100%;
-    border: #b38a4c 5px solid;
-    margin: -20px 0 10px 0;
 }
 
 @media screen and (max-width: 1087px) {
@@ -567,9 +548,6 @@ display: none;
     #container_important>h3{
         
     }
-    .column_right{
-        margin: 0;
-    }
 }
 
 @media screen and (max-width: 605px) {
@@ -622,21 +600,11 @@ display: none;
     #container_contact>form>input:nth-child(2){
         flex-basis: 100%;
     }
-    #container_xp>div:nth-child(3)>div>h3{
+    #container_xp>div:nth-child(2)>div>h3{
         flex-direction: column;
     }
     
 }
-
-@media only screen and (min-device-width : 300px) and (max-device-width : 768px) { 
-    .parallax{
-      background-attachment:scroll !important;
-      background-size: cover;
-      height: 100%;
-      overflow: hidden;
-    
-  }
-  }
 
 
 

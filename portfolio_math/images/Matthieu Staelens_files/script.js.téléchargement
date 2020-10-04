@@ -1,7 +1,6 @@
 const navbar = document.querySelector(".navbar")
 const nav = document.querySelector("nav")
 const btn = document.querySelector(".burger")
-const elementNav = document.querySelectorAll('.btn-nav')
 let position = pageYOffset
 
 nav.className = "nav_hidden"
@@ -26,14 +25,6 @@ window.addEventListener('scroll',()=>{
     }
     position = pageYOffset
 })
-
-//hide navlinks
-for (let i = 0; i < elementNav.length; i++) {
-    elementNav[i].addEventListener('click',()=>{
-    nav.className = "nav_hidden"
-})
-
-}
 
 var config = { method: 'POST',
                mode: 'cors',
